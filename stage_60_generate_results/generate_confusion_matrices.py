@@ -1,6 +1,4 @@
-﻿"""Generate per-subject and group-level normalized confusion matrices."""
-
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import csv
 import pickle
@@ -18,7 +16,6 @@ CLASS_NAMES = ["Up", "Down", "Right", "Left"]
 
 
 def load_subject_results() -> dict[str, dict]:
-    """Load the SVM result of each subject from the stage 40 pickle files."""
     files = list(INPUT_DIR.glob("sub-*_psd_svm_results_k_*.pkl"))
 
     def sort_key(path: Path) -> tuple[int, int]:

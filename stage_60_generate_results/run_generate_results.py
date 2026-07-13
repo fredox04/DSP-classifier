@@ -1,5 +1,3 @@
-"""Generate the stage 60 confusion-matrix results."""
-
 from generate_confusion_matrices import generate_confusion_matrices
 
 
